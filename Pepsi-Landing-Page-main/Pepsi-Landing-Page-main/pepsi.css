@@ -1,0 +1,215 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    overflow: hidden;
+    
+}
+.container{
+    margin: 0 7rem;
+    
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+ nav ul{
+    list-style: none;
+    display: flex;
+    
+}
+#home{
+    height: 100vh;
+    background-color: #0162be;
+    color: white;
+}
+nav .logo{
+    width: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+nav ul a{
+    padding: 20px;
+    color: white;
+}
+#home .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+#home .content img{
+    width: 220px;
+    animation: animation1 1s ease-out;
+}
+#home .content .content-text h1{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+
+}
+#home .content .content-text h1 span{
+    font-size: 70px;
+
+}
+#home .content .content-text p{
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    width: 60%;
+}
+.btn{
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    
+}
+.btn:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: all .5s ;
+}
+.social{
+    margin-left: 3rem;
+    animation: animation1 1s ease-out;
+}
+.social i{
+    color: white;
+    font-size: 25px;
+    margin: 10px 0;
+
+}
+.pepsi-types{
+    width: 100px;
+    display: block;
+    margin: auto;
+    animation: animation2 1s ease-out;
+    
+}
+@keyframes animation1{
+    0%{
+        transform: translatex(0);
+
+    }
+    50%{
+        transform: translatex(300px);
+
+    }
+    100%{
+        transform: translatex(0);
+
+    }
+
+
+}
+@keyframes animation2{
+    0%{
+        transform: translatey(0);
+
+    }
+    50%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translatey(0);
+
+    }
+
+
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media  (max-width: 600px) {
+    nav{
+        display: block;
+    }
+    nav .logo{
+        display: block;
+        margin: 0 auto 15px;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    nav ul a{
+        font-size: 12px;
+    }
+    .pepsi-types{
+        margin-top: 15px;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 900px and up) */
+@media  (max-width: 900px) {
+    .container{
+        margin: 0 1rem;
+        height: fit-content;
+        
+    }
+    .nav ul a{
+        padding: 10px;
+    }
+    #home .content{
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0 0 0;
+    }
+    #home .content .content-text p{
+        width: 100%;
+        text-align: center;
+    }
+    #home .content .content-text{
+        margin-bottom: 2rem;
+    }
+    #home .content img{
+        width: 50px;
+        margin-bottom: 1px;
+    }
+    .social{
+        margin-left: 0;
+        margin-bottom: 15px;
+        
+    }
+    
+    .pepsi-types{
+        margin-top: -20px;
+    }
+    
+    
+
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+
+} */
+
+
+
+
+
